@@ -23,6 +23,5 @@ include:
     shield: am_hatsu_left
   - board: nice_nano_v2
     shield: am_hatsu_right
-  - board: nice_nano_v2
-    shield: settings_reset
+ 
     
