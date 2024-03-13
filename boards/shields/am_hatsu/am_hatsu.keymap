@@ -20,6 +20,12 @@
 //west build -d build/left -b nrf52840_m2 --- -DSHIELD=am_hatsu_left
 //west build -d build/right -b nrf52840_m2 --- -DSHIELD=am_hatsu_right
 
+
+// git add .
+// git commit -m "Initial shield"
+// git push
+
+
     keymap {
        compatible = "zmk,keymap";
        default_layer {
