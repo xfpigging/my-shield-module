@@ -30,6 +30,14 @@
        compatible = "zmk,keymap";
        default_layer {
          label = "DEFAULT";
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    Q    |    W    |    E    |    R    |    T    |-----|    Y    |    U    |    I    |    O    |    P    |    \|    |
+// |   CAPS  |    A    |    S    |    D    |    F    |    G    |-----|    H    |    J    |    K    |    L    |   : ;   |   " '    |
+// |  mo 1   |    Z    |    X    |    C    |    V    |    B    |-----|    N    |    M    |    , <  |    . >  |    / ?  |    mo 2  |
+//|  TAB  |    FNSwitch    |    LSHIFT    |    SPACE     |       -----                    | ENTER   |   BSPC |  { [    |  ] }     |
+//|  WIN+E  |    ALT   |    CTRL    |    DELETE   |                 -----                    |   WIN  |  RCTRL |    ALT  |  _  |
+ // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
             bindings = <
 &kp ESC     &kp Q   &kp W       &kp E       &kp R   &kp T               &kp Y   &kp U   &kp I       &kp O       &kp P       &kp NUBS
 &kp CAPS    &kp A   &kp S        &kp D       &kp F   &kp G              &kp H   &kp J   &kp K       &kp L       &kp SEMI    &kp SQT
@@ -41,10 +49,19 @@
 
         number_layer {
             label = "NUMBER";
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   F1   |    F2    |    F3    |    F4    |    F5    |    F6    |-----|    F7    |    F8    |    F9    |    /   |    *    |    =    |
+// |    1   |    2     |    3     |    4     |     5    |    6     |-----|    7     |    8     |    9     |    0      |   -   |   +   |
+// |  mo 1   |   `~   |    !    |    @    |    #   |    $     |     -----|   %    |    ^    |    & |    UP  |   RIGHT  |    mo 2  |
+//|  TAB  |    FNSwitch    |    LSHIFT    |    SPACE     |          -----                    | ENTER   |   BSPC |  LEFT    |  DOWN    |
+//|  WIN  |    ALT       |    CTRL    |    DELETE   |               -----                    |   WIN  |  RCTRL |    ALT  |  insert  |
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+          
             bindings = <
 &kp F1      &kp F2          &kp F3          &kp F4      &kp F5      &kp F6            &kp F7      &kp F8     &kp F9       &kp KP_SLASH   &kp KP_MULTIPLY    &kp ENTER  
 &kp N1      &kp N2          &kp N3          &kp N4      &kp N5      &kp N6            &kp N7      &kp N8      &kp N9      &kp N0       &kp KP_MINUS       &kp KP_PLUS
-&mo 1       &kp GRAVE       &kp EXCL           &kp AT         &kp HASH       &kp DOLLAR           &kp PRCNT      &kp CARET       &kp AMPS      &kp UP      &kp RIGHT       &mo 2 
+&mo 1       &kp GRAVE       &kp EXCL        &kp AT      &kp HASH    &kp DOLLAR        &kp PRCNT   &kp CARET   &kp AMPS    &kp UP        &kp RIGHT         &mo 2 
 &kp TAB         &tog 1      &kp LSHIFT  &kp SPACE                                     &kp ENTER   &kp BSPC   &kp LEFT    &kp DOWN
 &kp LGUI        &kp LALT    &kp LCTRL   &kp DEL                                       &kp RGUI    &kp RCTRL   &kp RALT   &kp INS    	
             >;
@@ -52,6 +69,7 @@
 
         setting_layer {
             label = "SETTING";
+            
             bindings = <
 &ext_power EP_ON    &ext_power EP_OFF   &none   &none   &kp C_VOL_DN    &kp C_VOL_UP         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR_ALL
 &none       &none   &none   &none   &none   &none                                   &none           &none           &none   &none   &out OUT_BLE    &out OUT_USB
