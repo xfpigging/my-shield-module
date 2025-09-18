@@ -72,12 +72,13 @@
             
             bindings = <
 &ext_power EP_ON    &ext_power EP_OFF   &none   &none   &kp C_VOL_DN    &kp C_VOL_UP         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR_ALL
-&none       &none   &none   &none   &none   &none                                   &bt BT_CLR           &none           &none   &none   &out OUT_BLE    &out OUT_USB
-&sys_reset      &bootloader   &none   &none   &none   &none                                   &sys_reset      &bootloader     &none   &none   &out OUT_TOG           &mo 2
+&none       &none   &none   &none   &HOME   &PAGE_UP                                   &bt BT_CLR           &none           &none   &none   &out OUT_BLE    &out OUT_USB
+&sys_reset      &bootloader   &none   &none   &END   &PAGE_DOWN                                   &sys_reset      &bootloader     &none   &none   &out OUT_TOG           &mo 2
 &none       &none   &none   &none                                                   &none           &none           &none   &none
 &none       &none   &none   &none                                                   &none           &none           &none   &none
           >;
          };
     };
 };
+
 
